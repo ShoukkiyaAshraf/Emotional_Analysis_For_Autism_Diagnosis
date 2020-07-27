@@ -11,8 +11,8 @@ Training model - CNN , Transfer Learning - VGG16 , VGG19
 
 Deployment Using Flask
 
-<img src='output/test_1'> </img>
+<img src='output/test_1.PNG'> </img>
 
-<img src='output/test_2'> </img>
+<img src='output/test_2.PNG'> </img>
 
-<img src='output/test_3'> </img>
+<img src='output/test_3.PNG'> </img>
