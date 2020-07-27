@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>Face Expression Decoding</title>
+<link rel="stylesheet" href="static/css/style_index.css">
+<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  
+</head>
+
+<body>
+ <div class="wrapper">
+    <div class="sidebar">
+        <h2>Dashboard</h2>
+        <ul>
+           <li><a href="{{url_for('home')}}"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="{{url_for('about')}}"><i class="fas fa-address-card"></i>About</a></li>
+            <li><a href="{{url_for('logout')}}"><i class="fas fa-user"></i>Log Out</a></li>
+
+        </ul> 
+        
+    </div>
+    <div class="main_content">
+      
+        <div class="header">Face Expression Decoding</div>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method=post enctype=multipart/form-data>
+    	<br>
+   
+
+        <div style="text-align: center">
+    	<input type=file name=file style="position: absolute; top: 200%; left: 40%; background: #38d39f; border: none; color:#fff;font-size: 16px;border-radius: 12px;padding: 15px 32px;text-align: center;text-decoration: none;cursor: pointer;"> 
+    	 </h1>
+    	 </div>
+
+     
+        <div style="text-align: center">	
+        <button type="submit" style="position: absolute; top: 300%; left: 50%; background: #38d39f; border: none; color:#fff;font-size: 16px;border-radius: 12px;padding: 15px 32px;text-align: center;text-decoration: none;cursor: pointer;">Predict</button>
+      </h1>
+    </div>
+    </form>
+ 
+
+
+   <br>
+  
+
+
+   <div style="text-align: center"><br>
+        <button type="submit" style="position: absolute; top: 400%; left: 50%; background: #38d39f; border: none; color:#fff;font-size: 16px;border-radius: 12px;padding: 15px 32px;text-align: center;text-decoration: none;cursor: pointer;"> Report <a href="{{url_for('report')}}">{{output1}} </button>
+      </h1>
+    </div>
+ 
+
+
+
+
+</body>
+</html>

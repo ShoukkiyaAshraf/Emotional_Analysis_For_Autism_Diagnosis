@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>Face Expression Decoding</title>
+<link rel="stylesheet" href="static/css/style_index.css">
+<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  
+</head>
+
+<body>
+ <div class="wrapper">
+    <div class="sidebar">
+        <h2>Dashboard</h2>
+        <ul>
+           <li><a href="{{url_for('home')}}"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="{{url_for('about')}}"><i class="fas fa-address-card"></i>About</a></li>
+            <li><a href="{{url_for('logout')}}"><i class="fas fa-user"></i>Log Out</a></li>
+
+        </ul> 
+        
+    </div>
+    <div class="main_content">
+      
+        <div class="header">Face Expression Decoding - Report</div>
+
+<br> <div style="padding-left: 5%">
+   <frameset cols = "25%,50%,25%">
+    <pre>  
+    <div style="font: arial; border:3px solid #32be8f; border-radius: 20px;font-size: 15px; width: 200px ;background : #32be8f;color: #fff "><b><br>Report analysed From Video</b> 
+ <!-- <iframe src="static/report.txt"  frameborder="0" height="250" width="95%"></iframe> -->
+  <br><frame > {{content}}  </frame>
+
+     </div></pre></frameset></div></div>
+   
+  
+
+<div style="text-align: center"><form action="{{url_for('compare')}}" method="get">
+<button style=" position: absolute; top: 500px; left:50%; width:100px; height: 50px; border-radius: 25px; outline: none; border: none;background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);cursor: pointer;color: #fff"> compare</button></div>
+</form>
+</div>
+</div>
+</body>
+</html>

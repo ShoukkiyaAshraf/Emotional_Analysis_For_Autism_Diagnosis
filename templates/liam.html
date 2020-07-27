@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Case Study</title>
+	<link rel="stylesheet" href="static/css/style_index.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="sidebar">
+        <h2>Dashboard</h2>
+        <ul>
+            <li><a href="{{url_for('home')}}"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="{{url_for('about')}}"><i class="fas fa-address-card"></i>About</a></li>
+            <li><a href="{{url_for('logout')}}"><i class="fas fa-user"></i>Log Out</a></li>
+
+        </ul> 
+        
+    </div>
+    <div class="main_content">
+    	
+        <div class="header">Case Study Liam</div>
+
+<div class="report" ><div class="image_tex">
+    <a href="static/ADI/Report_P1.pdf"><img src="static/img/ADI.png" style="width: 45%; height: 45%; padding-left: 225px; padding-top: 100px "/> </a>
+    
+    <a href="{{url_for('ados')}}"><img src="static/img/ADOS.png" style="width: 36%; height: 36%; padding-left: 150px; padding-top: 100px  "/></div></a>
+  
+</div>
+<br><br><br><br><br>       
+<div class="container"><img src="static/img/doctors.png" style="float:right; width: 15%; height: 15%"/>
+ 
+
+
+</div>
+
+
+          
+
+</body>
+</html>
