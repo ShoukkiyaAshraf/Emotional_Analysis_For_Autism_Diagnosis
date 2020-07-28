@@ -1,0 +1,44 @@
+
+\pagestyle{empty}
+\input{titlepage}
+\clearpage
+
+
+\pagenumbering{gobble}
+%\pagestyle{empty}
+\addcontentsline{toc}{chapter}{\quad CERTIFICATE}
+\input{certificate}
+\clearpage
+
+%\pagestyle{empty}
+\addcontentsline{toc}{chapter}{\quad UNDERTAKING}
+\input{undertaking}
+\clearpage
+
+
+
+%   Redefining plain page style
+%  
+\fancypagestyle{plain}{%
+\fancyhf{} % clear all header and footer fields
+\fancyhead[L]{{\scriptsize \vtitle}}
+\fancyhead[R]{\includegraphics[width=0.5cm]{VidyaLogo.JPG}}
+%\fancyfoot[C]{\bfseries \thepage} 
+\fancyfoot[L]{{\footnotesize Department of Computer Science \&  Engg.}}
+\fancyfoot[R]{\footnotesize VAST, Thalakotukara}
+\fancyfoot[C]{\footnotesize \bf \thepage}%
+\renewcommand{\headrulewidth}{1pt}%
+\renewcommand{\footrulewidth}{1pt}%
+}%
+%
+
+\pagenumbering{roman}
+
+\pagestyle{plain}
+\addcontentsline{toc}{chapter}{\quad ACKNOWLEDGEMENT}
+\input{acknowledgment}
+
+
+
+
+
