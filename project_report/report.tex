@@ -1,0 +1,1024 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%   Hi, All
+%   Arun Xavier, VAST Thrissur
+%
+%   for more  Visit my Page - http://arunxeee.blogspot.in/
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{preamble}
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%          Edit the Names & others from below onwards. . .
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\VAtitle{ASDD-AN AUTISM DIAGNOSIS TOOL}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   
+%	Give Students name in Alphabetical Order 
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\sloppy
+\VAauthora{RIYA SALIM (VAS16CS092)}
+\VAauthorb{SHAHEEN N S ( VAS16CS104)}
+\VAauthorc{SHIRAS VM (VAS16CS106)}
+\VAauthord{SHOUKKIYA ASHRAF (VAS16CS107)}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%	Give details of Main Author, (to be seen in the certificate, etc.)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\VAadmissionyear{2016}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\VAprincipal{Dr Saji C B}
+\VAguide{Mr. Sivadasan E. T}
+\VAguidedg{Asso. Prof.}  % Give your Guides Designation Asst. Prof.,
+\VAhod{Dr. Ramani Bai V }
+\VAdate{May 2020}
+\VAacademicyear{2019-2020}%
+\VAdept{Computer Science and Engineering}
+\VAclass{B.Tech (CSE)}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{frontmatter}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter*{\centering{Abstract}}
+\addcontentsline{toc}{chapter}{\quad ABSTRACT}
+
+Autism spectrum disorder is a neurological developmental disability that hampers normal brain development, affecting communication, social interaction, cognition, and behavior.\\
+\\Autism is a lifelong condition with no cure and there is no single medical test for diagnosing autism but a set of specific evaluations and assessments to confirm the condition and hence can help the child learn the necessary skills to improve the quality of their life.Some of the assessments include: Physical and nervous system (neurological) test,Autism Diagnostic Interview - Revised  (ADI-R),Autism Diagnostic Observation Schedule (ADOS),Childhood Autism Rating Scale (CARS)etc..These tests provide a complete view of a child’s current development and potential concerns, allowing the clinician to make an appropriate diagnosis and provide intervention recommendations.But the cost of such assessments can be quite expensive.Families with autistic children often face a huge financial burden. Expenses for autism treatment and therapies are not covered by most private health insurers, and they are quite expensive.\\
+We aim to design a system for autism diagnosis that helps both the doctor and families with autistic children in autism diagnostics process.The  system mainly consists of two parts based on Autism Diagnostic Interview (ADIS) which is a questionnaire system and an observatory system based on Autism Diagnostic Observation Schedule (ADOS).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%       
+%		Do not change any thing after this . . .
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\tableofcontents
+\addcontentsline{toc}{chapter}{\quad  LIST OF FIGURES}
+\listoffigures
+\addcontentsline{toc}{chapter}{\quad  LIST OF TABLES}
+\listoftables
+% For adding List of symbols or abbreviations
+\addcontentsline{toc}{chapter}{\quad  LIST OF SYMBOLS AND ABBREVIATIONS}
+\input{nomen}
+\mainmatter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%    
+%%    Copy your Project Work below from Here
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\chapter {INTRODUCTION}
+
+{\em Don't think that there's a different,better child 'hiding' behind the autism.This is your child.Love the child in front of you.Encourage his strengths,celebrate his quirks,and improve his weaknesses,the way you would with any child}
+
+\section{General}    % For giving Section  eg: 1.1
+
+Autism spectrum disorder (ASD) is one of the most common neurodevelopmental disorders, with which the patients usually have social deficits of communication, interactions and imagination.ASD is a permanent problem that affects a high percentage of the population. The prevalence of ASD has been increasing over the past two decades, with a global population prevalence of about 1 percentage worldwide. Converging evidence indicates that early diagnosis followed by intensive intervention is paramount in order to optimize the outcome of the therapy, especially for children. Yet, diagnosis of ASD remains a complex problem. Typically, it relies on specialist medical expertise with diagnostic instrumentation that depends on interpretative coding of child observations, parent interviews, and manual testing.\\
+Diagnosing autism spectrum disorder (ASD) can be difficult because there is no medical test, like a blood test, to diagnose the disorder. Doctors look at the child’s developmental history and behavior to make a diagnosis.ASD can sometimes be detected at 18 months or younger. By age 2, a diagnosis by an experienced professional can be considered very reliable. However, many children do not receive a final diagnosis until much older. Some people are not diagnosed until they are adolescents or adults. This delay means that children with ASD might not get the early help they need.Early signs of ASD can include, but are not limited to avoiding eye contact,having little interest in other people,limited display of language, or getting upset by minor changes in routine.\\
+Typically autism is diagnosed through screening tools that include observation, play activities, motor skill assessment and verbal and non-verbal communication evaluations.The cost of these screening tools for autism diagnostics can be quite expensive.Hence,through our project,we aim to introduce a cost-effective system for autism diagnostics that helps both the family and doctor in the diagnosis process.The system consists of questionnaire system based on Autism Diagnostic Interview - Revised paired with an observatory system based on Autism Diagnostic Observation Schedule (ADOS).The assessments using this system may provide a complete view of your child’s current development and potential concerns, allowing the clinician to make an appropriate diagnosis and provide intervention recommendations.
+
+
+
+
+
+% You can add any sections like that . . . 
+
+\section{Objectives of the Work}
+The main objective is to design a cost-effective system for autism diagnostics.The system includes a questionnaire tool for the parents or caregivers based on ADI-R which focuses on the developmental history of the child and an observatory system based on ADOS  which focuses on the behaviors of autistic patients.Since normal specialized diagnosis is a complicated and costly procedure,time is up to think of a supportive system that helps the doctor in complications, to allow children and families access to such practical assessment of diagnosis as ﬁnancial help and  entry to intervention and also allowing it to be used in poor remote communities where there is a lack of specialists to diagnose autism in younger children, in which clinical symptoms are not evident.
+
+
+
+
+.  %\ref for the figure label, check the below figure.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%		Before using image put the jpg image file in the folder. 
+%		Here   ct.jpg   is the file name
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\begin{figure}[h]
+%\label{ss}    %Figure Label is used
+%\centering
+%\caption{ System Circuit Diagram}
+%\end{figure}
+
+
+\section{Motivation for this work}
+
+It is estimated that worldwide one in 160 children has an ASD(Autism Spectrum Disorder). ASDs begin in childhood and tend to persist into adolescence and adulthood.While some people with ASD can live independently, others have severe disabilities and require life-long care and support.Evidence-based psychosocial interventions, such as behavioural treatment and parent skills training programmes, can reduce difficulties in communication and social behaviour, with a positive impact on well-being and quality of life for persons with ASD and their caregivers.Interventions for people with ASD need to be accompanied by broader actions for making physical, social and attitudinal environments more accessible, inclusive and supportive.Worldwide, people with ASD are often subject to stigma, discrimination and human rights violations. Globally, access to services and support for people with ASD is inadequate.Most children were still being diagnosed after age 4, though autism can be reliably diagnosed as early as age 2.Minority groups tend to be diagnosed later and less often.Early intervention affords the best opportunity to support healthy development and deliver benefits across the lifespan.\\
+A recent survey of paediatricians found they often lacked enough information to accurately diagnose an autism spectrum disorder (ASD) in children. ASD is an important diagnosis not to miss.This has led to controversy about whether this is an uncovering of cases that in the past would have been missed, an epidemic of ASD caused by environmental toxins affecting the early developing brain.The ASD diagnosis may be obvious in some cases and ambiguous in others. However, related strengths and weaknesses usually require further investigation. Where there is intellectual disability, searching for metabolic and genetic causes is important.\\
+A full assessment may include a physical examination, genetic and other blood tests and brain scans, a thorough family and developmental history, an assessment of parenting and family dynamics, a similar assessment of the child’s experience of school, psychometric, speech and language testing, structured testing such as the ADOS and hearing tests if needed.
+Following a comprehensive assessment and accurate diagnosis, support for the child, family and school can be given most beneficially and cost-effectively. Such accuracy requires time and assessment across different contexts.
+
+
+
+\section{Methodologies Adopted}
+\textbf{Autism Diagnostic Interview(ADIS)}\\
+The Autism Diagnostic Interview(ADIS) is one of the most widely used diagnostic algorithms in determining whether or not children have autism spectrum disorder (ASD). Together with the ADOS (Autism Diagnostic Observation Schedule), it is the diagnostic tool of choice for many public school systems and psychology professionals when evaluating kids suspected of being on the spectrum. The Diagnostic criteria is Diagnostic and Statistical Manual of Mental Disorders 5th Edition (DSM-5: American Psychiatric Association, 2013).\\
+The DSM contains descriptions, symptoms, and other criteria for diagnosing mental disorders. The DSM-5 is now the standard reference that healthcare providers use to diagnose mental and behavioral conditions, including autism.It provides a common language for clinicians to communicate about their patients and establishes consistent and reliable diagnoses that can be used in the research of mental disorders.\\
+
+\textbf{Autism Diagnostic Observation Schedule (ADOS)}\\
+The Autism Diagnostic Observation Schedule (ADOS) is a semi-structured assessment of communication, social interaction, and play (or imaginative use of materials) for individuals suspected of having autism or other pervasive developmental disorders.The Childhood autism rating scale(CARS) is used as assessment tool for diagnosis of autism.The difference CARS have from other behavior rating tools is that it actually can tell the difference if your child has autism or other developmental delay disorders like mental retardation. It makes it easier for healthcare providers, educators and parents to identify and classify children with autism.\\
+\section{Outline of the Report}
+
+This report contains 7 chapters. Chapter 1 gives the introduction to the project work and describes the objectives of the work. Literature survey is describes in Chapter 2. System design is the next chapter.And next one is the methodology. The fourth chapter describes implementation part and Evaluation and results were described in the sixth chapter. Final chapter contains the final conclusion.
+
+
+\chapter{LITERATURE REVIEW}
+
+{\emIn The new study found that children with high-functioning autism spectrum disorder integrated in regular schools find it difficult to perform writing tasks. This can impair their academic achievements, social availability, and self-confidence, say experts. So early detection will help to solve all these.  }
+
+
+\section{Detection of Autism Spectrum Disorder (ASD) using Machine Learning Techniques}
+
+Mamata V. Lohar1 and Suvarna S. Chorage2 1Research Scholar, Dept. of E&TC, AISSMS Institute of Information Technology, Pune-01 2Professor, Dept. of E&TC, Bharati Vidyapeeth’s College of Engineering for Women, Pune-43 
+
+
+ASD is a condition of neurodevelopment which adversely affects people's entire lives. The main signs of ASD are lack of public contact and communication, patterns of repeated behavior, attitudes and actions, etc. Although ASD is seen at an early stage of development, certain defects and behavioral patterns may not be identified as symptoms unless in significant steps they impact the life of the child.
+\begin{figure}[h]
+\label{ss}
+\centering
+\includegraphics[width=14cm]{Types of autism.JPG}
+\caption{Types of autism}
+\end{figure}
+
+
+The defects in the social and interpersonal fields of autistic behavior were maintained and present before the age of three years.Speech deferment is Autism's main feature.  In the very young child, the abnormalities become less evident and become more obvious when the adult is in school. Individuals with the disorder of Asperger may have an average or higher IQ. This condition is more widespread in males (13:1), but in females, it might be underdiagnosed. \\
+
+Pervasive Development Disorder (PDD) is referred to as normal autism; PPNOS can be identified if a child does not meet the diagnosis criteria but demonstrates significant and widespread deficiency in meticulous behaviors. Often known as Atypical Autism is the PDDNOS. For boys more affected than girls, the CDD is extremely rare. Following an average of 2-4 years of normal growth, but usually before age 10, the children who are diagnosed with CDD begin to lose skills and show signs of ASD. Children with Childhood Disintegrative Disorder may not be able to take on in conversations with others or may use nonverbal forms of communication such as actions, smiles, or drowsy, and may lose interest in winning with peers in other social situations. \\
+\begin{figure}[h]
+\label{ss}
+\centering
+\includegraphics[width= 14 cm]{methodology for classification of asd.jpg}
+\caption{Methodology for classification of ASD}
+\end{figure}
+Medical imaging plays an important role in many aspects of medical diagnosis and therapy in the current time of technological development.  For correct medical analysis and therapy, it needs more accurate images with much more details and information. Medical image fusion is one of the solutions in a single image to obtain both high spatial and high spectral data. Multimodal medical image fusion greatly improves the quality of the fused image. Previous studies on autism have been performed in several imaging modalities such as Structural MRI (sMRI), Functional MRI (fMRI), and Diffusion Tensor Imaging (DTI). Modality fusion will be performed to get more detailed brain scans to help better understand and analyze ASD. \\
+The ASD cases and controls are selected from the diagnostic tool. The preprocessing like sampling, noise removal, feature extraction, and selection is done. The processed data is given to the detective model of ASD classification using machine learning techniques. The prediction results are then tested and verified.Machine learning approaches provide automated, efficient and effective classification models for the ASD problem as they use a combination of computer science and mathematical methods. 
+
+
+\section{Feasibility Study of Autism Behavioral Markers in Spontaneous Facial, Visual, and Hand Movement Response Data}
+
+Manar D. Samad, Norou Diawara, Jonna L. Bobzien, John W. Harrington, Megan A. Witherow, and Khan M. Iftekharuddin Senior Member, IEEE
+
+
+Autism Spectrum Disorder (ASD) is a neurodevelopmental disability with atypical traits in behavioral and physiological responses. These atypical traits in individuals with ASD may be too subtle and subjective to measure visually using tedious methods of scoring. Alternatively, the use of intrusive sensors in the measurement of psychophysical responses in individuals with ASD may likely cause inhibition and bias. This work proposes a novel experimental protocol for non-intrusive sensing and analysis official expression,visual scanning, and eye-hand coordination to investigate behavioral markers for ASD. \\
+
+ Currently, there are no diagnostic biomarkers for ASD therefore, this disorder is commonly identiﬁed through direct visual observation of atypical behaviors.However, visual observation methods have limitations in identifying subtle behavioral traits which may gradually lead to more complex behavioral impairments over the developmental period of the child with ASD.   The ASD literature generally investigates how individuals with ASD either recognize or respond to facial expressions displayed as visual stimuli.\\
+ \begin{figure}[h]
+\label{ss}
+\centering
+\includegraphics[width= 14 cm]{preparation work for a session and timing diagram for automated sequence of actions in a trial of the study.jpg}
+\caption{preparation work for a session and timing diagram for automated sequence of actions in a trial of the study}
+\end{figure}
+ 
+
+This work demonstrates systematic acquisition and quantitative evaluations of multi-modal physiological responses in the investigation of behavioral biomarkers for subjects with ASD. The multi-modal physiological data offer useful complementary information in the interpretation of complex nonverbal expressions of the group with ASD. 
+
+
+\section{Components to design serious games for children with autism spectrum disorder (ASD) to learn vocabulary}
+
+Kamran Khowaja, Siti Salwah Salim ,Dena Al-Thani Division of Information and Computing Technology, College of Science and Engineering Hamad Bin Khalifa University Qatar
+
+Signs of ASD begin during early childhood and usually last throughout a person’s life .The symptoms affect a person’s functioning depends on the severity and combination of those symptoms. Reading comprehension is composed of two important and distinct components .ecoding and Language Comprehension; if a child is able to decode text and understands it, this ensures that the child is reading. According to Chiang and Lin It is considered one of the important academic skills that children learn at their school. Children with ASD are visual learners.They can retain information for the longer time duration if the information is presented visually to them.\\
+
+
+1) autism behaviours, 2) instruction methods and 3) modalities. These three and the strategies are regarded as the components because they play an important role in the learning of vocabulary. The importance/usefulness of these components is described below: 1. Strategies: The use of multiple strategies for vocabulary instruction in serious games can motivate children with ASD and allows them to stay focused on the learning. 2. Autism behaviours: The children with ASD have a set of behaviours related to vocabulary instruction as well as general behaviours related to other skills. The support of general and specific behaviours of vocabulary instruction can facilitate these children to develop behaviours in which they face difficulties.  3. Instruction methods: Each instruction method has its own pros and cons. The use of appropriate instruction method related to vocabulary instruction in the serious game can provide an effective learning environment to these children so that they can improve their behaviours. 4. Modalities: The use of multiple modalities for the input can give freedom to these children in the way they would like to communicate with the serious game. The use of multiple output modalities together can provide a better learning experience for the child.\\
+\begin{figure}[h]
+\label{ss}
+\centering
+\includegraphics[width= 10 cm]{framework and their components.JPG}
+\caption{framework and their components}
+\end{figure}
+
+A comprehensive list of components has been compiled based on the review of the literature on ASD and the existing serious games design frameworks. The four components namely autism behaviours, strategies, instruction methods, and modalities are related to children with ASD and their learning of vocabulary. The remaining components are based on the review of existing serious games design frameworks. Each component plays an important role in the design of the game and can contribute towards a certain aspect of the serious game design for autistic children to learn vocabulary. A further analysis is needed to produce a list of components based on similarities within intra and inter-frameworks. This would support in defining the list of components.  
+ 
+
+
+\section{Early Detection, Diagnosis and Treatment of Autism Using Mobile Application Platform }
+Pradeep Sudhakaran, C. Malathy, Ankit Khanna, Prajakta Sandip Sanas   
+
+This paper concentrates on the detection of autism in children in the first few years of their life using machine learning algorithm.They used Machine Learning to combine and compile clinical data gained from thousands of minors at risk from ASD to build an easy to apply, fast, and economic autism testing tool that performs way better than most commonly used regulated equipment.\\
+The autism machine learning based testers were trained using knowledge combined from different clinical repositories of ADOS and ADI-R mark-sheets of nearly 7 thousand children between 17 to 84 months of birth, supplemented by information gained from the guardians of minors answering evaluation questions Cognoa's website. Both testers were applied using Cognoa's Application in a medical test to a fragment of 162 in jeopardy minors.\\
+\begin{figure}[h]
+\label{ss}
+\centering
+\includegraphics[width= 14 cm]{Architecture Diagram schedule and monitoring system.jpg}
+\caption{Architecture Diagram schedule and monitoring system}
+\end{figure}
+The autistic minor can remember and understand pictures better than letters thus using it towards developing and constructing a daily routine for the minor can prove beneficial in the learning process. Manipulating these skills, guides minors to better memorizing and understanding of the letters. From the above scenario, we propose that a mobile android application should be developed where in a catalogue of letters which together form words are provided along with corresponding pictures for relational understanding between the pictures and their meaning.\\
+The Application once developed would enable the parents/guardian to detect autism of their child at home following which they would go to a doctor who would further perform a test for the detection of the level of autism in the child on the basis of his age. After this the doctor would assign certain predefined activities present in the application on the basis of the result of the test to improve the level of autism in the child.
+
+\section{Video Gesture Analysis for Autism Spectrum Disorder Detection
+}
+
+Andrea Zunino, Pietro Morerio, Andrea Cava, Caterina Ansuini, Jessica Poddat, Francesca Battaglia, Edvige Venesellik, Cristina Becchio and Vittorio Murino
+
+ This work aims at providing an automatic objective support to the doctor for the assessment of (early) diagnosis of possible autistic subjects by only using video sequences. Using a standard video camera, patient and healthy children performing the same simple gesture of grasping a bottle was recorded. By only processing the video clips depicting the grasping action using a recurrent deep neural network, it is possible to discriminate with a good accuracy between the 2 classes of subjects. The designed deep model is also able to provide a sort of attention map in which the zones in the video of major interest are identiﬁed in space and time: this explains in a certain way which areas the model deems more relevant to the classiﬁcation purpose, which could also be used by the doctor to make the diagnosis.\\
+
+\begin{figure}[h]
+\label{ss}
+\centering
+\includegraphics[width= 15 cm]{review5.jpeg}
+\caption{LSTM-based model used for classifying ASD and TD subjects from video sequences}
+\end{figure}
+The model is based on the Long Short Term Memory (LSTM) network. LSTM networks have in fact been proven to effectively codify temporal information of video sequences, especially when fed with powerful deep features.Convolutional Neural Network (CNN) features are ﬁrst extracted frame by frame from each video and feed recursively the LSTM.The LSTM has a 128-dimensional hidden representation, which is based on the current input and on the past LSTM hidden state. Such 128-dim feature vector is further passed through a non-linear classiﬁer, represented by a 16-dimensional fully connected (FC) layer and a binary softmax. The network learns where to to focus attention at the next time instant. Such soft attention mechanism allows us to inspect (to some spatial extent) where the network is learning useful cues within the image frame. This can provide a further useful visual feedback to clinicians. 
+
+\\
+As a common procedure for LSTM training, each video is split in 15-frame clips and passed through the entire model which outputs a binary vector containing, for each frame, the probabilities for ASD or TD. The test accuracy for each subject is computed by averaging the scored probabilities over all the frames of the videos.\\
+In the end, this work constitutes a ﬁrst step towards the development of an automatic computational system devoted to the early diagnosis of autistic subjects, providing the medical expert of a supportive objective method, potentially simple to use in clinical and also more open settings.
+
+
+
+
+
+\chapter{SYSTEM DESIGN}  % Short of the project name
+
+
+\emIn{System design is the process of designing the elements of a system such as the architecture, modules and components, the different interfaces of those components and the data that goes through that system.}
+ 
+\section{System Architecture}
+
+\begin{figure}[h]
+\label{ss}
+\centering
+\includegraphics[width= 17 cm]{System_Design.jpg}
+\caption{System Diagram}
+\end{figure}
+Here the supportive system assists both the doctor and family with autistic child in the autism diagnosis process.The main goal is to provide a complete view of your child’s current development and potential concern using a cost-effective system, allowing the clinician to make an appropriate diagnosis and provide intervention recommendations.The system consists of mainly two assessment modules.
+\begin{enumerate}
+    \item Questionnaire System-Based on Autism Diagnostic Interview - Revised
+    \item Observatory System-Based on Autism Diagnostic Observation Schedule
+    \end{enumerate}
+The first module is a questionnaire system based on Autism Diagnostic Interview,with which the information regarding the child’s developmental history is collected from the parents or other caregivers.Based on responses from assessment,scoring is done on each of 9 domains under 4 categories (i.e., communication and language, social interaction, and restricted, repetitive behaviors).Finally this module of the system generates a report accordingly based on the score obtained.The second module is an observatory system based on Autism Diagnostic Observation Schedule (ADOS).Here in this module,some videos based on some categories in the CARS(Childhood Autism Rating Scale) is narrated and some tasks to check motor coordination of the patient is also given.And then the patient’s response and behaviour from these scenarios can be recorded and analysed using Machine Learning Techniques and a report is generated from this analysis.The resultant report from these two modules of the system helps in autism diagnostics and further interventions.These assessments also meets the standards of the Diagnostic and Statistical Manual of Mental Disorders (DSM-5).
+\subsection{Questionnaire System-Based on Autism Diagnostic Interview - Revised}
+The questionnaire system based on Autism Diagnostic Interview-Revised (ADI-R) is a structured interview conducted with the parents or caregivers of individuals who have been referred for the evaluation of possible  autism spectrum disorders.The interview can be used for diagnostic purposes for anyone with a mental age of at least 24 months and measures behavior in the areas of reciprocal social interaction, communication and language, and patterns of behavior.It will be useful for 
+\begin{itemize}
+  \item Diagnosing autism
+  \item Planning treatment
+  \item Distinguishing autism from other developmental disorders
+  \end{itemize}
+  \\The questionnaire covers the referred individual's full developmental history.The caregivers or parents of the individual are asked to attend the questionnaire covering nine domains examined under 4 categories (communication questions, social development and play questions, repetitive and restricted behavior questions, and questions about general behavior problems).Because the ADI-R is an investigator-based interview, the questions are very open-ended and the investigator is able to obtain all of the information required to determine a valid rating for each behavior.For this reason, parents and caretakers usually feel very comfortable when taking part in this interview because what they have to say about their children is valued by the interviewer. Also, taking part in this questionnaire helps parents obtain a better understanding of autism spectrum disorder and the factors that lead to a diagnosis.The process involved in the system covers the following steps:
+  \begin{enumerate}
+    \item Information collection
+    \item Scoring
+    \end{enumerate}
+    
+\subsubsection{Information collection}
+\begin{figure}[h]
+\label{ss}
+\centering
+\includegraphics[width= 14 cm]{Information_Collection.jpeg}
+\caption{Categories for assessment}
+\end{figure}
+The information(i.e  individual's full developmental history)is collected from parents or caregivers as a questionnaire model covering the main 9 domains examined under 4 categories.\\
+\begin{itemize}
+  \item first section of the interview is used to assess the quality of social interaction and includes questions about emotional sharing, offering and seeking comfort, social smiling, and responding to other children.
+  \item  The communication and language behavioral section investigates stereotyped utterances, pronoun reversal, and social usage of language. Stereotyped utterances are the few words or sounds that the individual uses and repeats most often.
+  \item The restricted and repetitive behaviors section includes questions about unusual preoccupations, hand and finger mannerisms, and unusual sensory interests.
+  \item Finally, the assessment contains questions about behaviors such as self-injury, aggression, and over activity which would help in developing treatment plans.
+  \end{itemize}
+
+\subsubsection{Scoring} 
+\begin{figure}[h]
+\label{ss}
+\centering
+\includegraphics[width= 14 cm]{Score.jpeg}
+\caption{Score Report Model}
+\end{figure}
+After the interview is completed,the system determines a rating score for each question based on their evaluation of the parent's or caregiver's response.A total score is calculated for each of the interview's content areas.The questions were most closely related to the criteria for diagnosis of Autism Spectrum Disorder in the DSM-V. 
+\\
+
+Rating Score:
+\begin{itemize}
+    \item 0:"Never seen"
+    \item 1:"Used to be there,not anymore"
+    \item 2:"Often seen"
+    \item 3:"Very often seen"
+\end{itemize}
+
+ 
+
+\subsection{Observatory System-Based on Autism Diagnostic Observation Schedule}
+
+\begin{figure}[h]
+\label{ss}
+\centering
+\includegraphics[width= 14 cm]{Observatory system model.jpeg}
+\caption{Observatory system model}
+\end{figure}
+
+The Autism Diagnostic Observation Schedule (ADOS) is a semi-structured assessment of communication, social interaction, and play (or imaginative use of materials) for individuals suspected of having autism or other pervasive developmental disorders.The Childhood autism rating scale(CARS) is used as assessment tool for diagnosis of autism.The difference CARS have from other behavior rating tools is that it actually can tell the difference if your child has autism or other developmental delay disorders like mental retardation. It makes it easier for healthcare providers, educators and parents to identify and classify children with autism.\\
+CARS works by rating your child’s behavior, characteristics, and abilities against the expected developmental growth of a typical child.
+
+As stated in the CARS, these characteristics are evaluated:
+\begin{itemize}
+  \item Emotional response
+  \item Relationship to people
+  \item Imitation
+  \item Body use
+  \item Object use
+  \item Adaptation to change
+  \item Visual response
+  \item  Listening response
+  \item Taste-smell-touch response and use
+  \item Fear and nervousness
+  \item Verbal communication
+  \item Non-verbal communication
+  \item Activity level
+  \item Level and consistency of intellectual response
+  \item General impressions
+\end{itemize}
+It is done by primary healthcare provider, a teacher or a parent by rating the child’s behaviors from 1 to 4. 1 being normal for your child’s age, 2 for mildly abnormal, 3 for moderately abnormal and 4 as severely abnormal. Scores range form 15 to 60 with 30 being the cutoff rate for a diagnosis of mild autism. Scores 30-37 indicate mild to moderate autism, while scores between 38 and 60 are characterized as severe autism. Keep in mind that while the Childhood Autism Rating Scale can easily be accessed on the internet, using it to evaluate your child on your own is not advised. It is still best to seek professional help in interpreting the result of your child’s CARS.
+
+\subsubsection{Emotional response}
+1.Age-appropriate and situation-\\appropriate emotional responses-The child shows the appropriate type and degree of emotional response as indicated by a change in facial expression,posture, and manner. \\
+2.Mildly abnormal emotional responses -\\ The child occasionally display a some what inappropriate type or degree of emotional reactions. Reaction are sometimes unrelated to the objects or events surrounding them. \\
+3.Moderately abnormal emotional responses -\\  The child shows definite signs of inappropriate type and/or degree of emotional response. Reactions may be quite inhibited or excessive and unrelated to the situation; may grimace, laugh, or become rigid even though no apparent emotion-producing objects or events are present.\\
+4.Severely abnormal emotional responses - \\Responses are seldom appropriate to the situation; once the child gets in a certain mood,it is very difficult to change the mood. Conversely, the child may show wildly different emotions when nothing has changed.
+
+
+
+\chapter{METHODOLOGY}
+\emIn{The purpose of project methodology is to allow for controlling the entire management process through effective decision making and problem solving, while ensuring the success of specific processes, approaches, techniques, methods and technologies.
+}
+\section{Type Of Research For ADOS - Deep Learning}
+\begin{center}
+    "\emph{What we want is a machine that can learn from experience}"
+\end{center}    
+Deep learning is an artificial intelligence (AI) function that imitates the workings of the human brain in processing data and creating patterns for use in decision making.It has networks capable of learning unsupervised from data that is unstructured or unlabeled. Also known as deep neural learning or deep neural network.
+Deep learning is part of a broader family of machine learning methods based on artificial neural networks.The artificial neural networks are built like the human brain, with neuron nodes connected together like a web. There are three types of layers of neurons in a neural network: the Input Layer, the Hidden Layer(s), and the Output Layer. Connections between neurons are associated with a weight, dictating the importance of the input value. The major reason for adopting  this is because the performance measure of deep learning models are much better than other learning algorithms.\\
+
+
+
+
+\subsection{Emotion Recognition using Deep Learning}
+The main goal of this module is to compare the emotional response of the child with normal conditions. For this we need to extract the facial expression of the child which shows the context of interaction . Facial expressions can be decoded with the help of Deep Learning.Various datasets are investigated and explored for training expression recognition model.\\
+Emotion Recognition deals with the investigation of identifying emotions, techniques and methods used for identifying.This may be a challenging task because emotions may vary depending on the environment, appearance, culture, face reaction which leads to ambiguous data.Enormous methods can be used to infer the emotions such as machine learning,deep learning, neural networks, artificial intelligence, emotional intelligence.
+\section{Data Collection}
+
+The data collection includes the selection of images consists of basic emotions - happy, sad, neural, angry, fear, surprise, disgust . The dataset is in csv format which consists of pixel values of each images . Each row consists of image pixel values and corresponding emotions. The values for the emotions are marked as follows :
+\begin{itemize}
+    \item anger=0
+    \item disgust=1
+    \item fear=2
+    \item happy=3
+    \item sad=4
+    \item surprise=5
+    \item neutral=6
+\end{itemize}
+The row values of ‘pixels’ column corresponds to each image.
+
+\section{Preprocessing}
+\subsection{Categorical Cross-Entropy}
+Since we have multiple class - (7 emotions ) here we will use categorical cross entropy. It is a softmax activation plus a Cross-Entropy loss. If we use this loss, we will train a CNN to output a probability over the  ‘C’ classes for each image. It is used for multi-class classification.
+\begin{figure}[h]
+\label{ss}
+\centering
+\includegraphics[width= 13 cm]{preprocessing1.jpeg}
+\end{figure}
+There is only one element of the Target vector ‘t’ which is not zero  ti=tp. So discarding the elements of the summation which are zero due to target labels, we can write:
+Where Sp is the CNN score for the positive class.
+\begin{figure}[h]
+\label{ss}
+\centering
+\includegraphics[width= 13 cm]{preprocessing2.jpeg}
+\end{figure}
+
+\subsection{Splitting to Training, validation, and test sets}
+Three datasets are commonly used in different stages of the creation of the model. The data set is split into train data  and test data with test size of 10\%.Training dataset - The sample of data used to fit the model.The actual dataset that we use to train the model (weights and biases in the case of a Neural Network). The train data is further divided into train data and validation data. The test dataset (or subset) in order to test our model’s prediction on this subset.
+\subsection{Reshaping the input}
+The reason for reshaping is to ensure that the input data to the model is in the correct shape. Most convolutional neural networks are designed in a way so that they can only accept images of a fixed size. So this steps involves the reshaping of input corresponding to each model used .
+
+\section{Algorithms}
+\subsection{CNN - Convolutional Neural Network}
+
+CNNs are regularized versions of multilayer perceptrons. Multilayer perceptrons usually mean fully connected networks, that is, each neuron in one layer is connected to all neurons in the next layer.A convolutional neural network consists of an input and an output layer, as well as multiple hidden layers. The hidden layers of a CNN typically consist of a series of convolutional layers .\\
+\begin{figure}[h]
+\label{ss}
+\centering
+\includegraphics[width= 14 cm]{CNN.jpeg}
+\caption{Convolutional Neural Network}
+\end{figure}
+\\A ConvNet is able to successfully capture the Spatial and Temporal dependencies in an image through the application of relevant filters. The architecture performs a better fitting to the image dataset due to the reduction in the number of parameters involved and reusability of weights. In other words, the network can be trained to understand the sophistication of the image better.
+
+\subsubsection{i.Feature Extraction} 
+\textbf{\emph{Convolutional layer - The kernel}}
+\begin{figure}[h]
+\label{ss}
+\includegraphics[width= 11cm]{Convolution.jpeg}
+\caption{Convolution}
+\end{figure}
+\\  Convolutional layers convolve the input and pass its result to the next layer with kernel.The objective of the Convolution Operation is to extract the high-level features such as edges, from the input image.The filter moves to the right with a certain Stride Value till it parses the complete width. Moving on, it hops down to the beginning (left) of the image with the same Stride Value and repeats the process until the entire image is traversed.
+
+\\The kernel in convolutional neural network is a filter that is used to extract the features from the images. The kernel is a matrix that moves over the input data, performs the dot product with the sub-region of input data, and gets the output as the matrix of dot products.\\
+
+\textbf{\emph{Pooling}}
+\begin{figure}[h]
+\label{ss}
+\includegraphics[width= 11cm]{Max Pooling.jpeg}
+\caption{Max Pooling}
+\end{figure}
+\\The function of pooling is to progressively reduce the spatial size of the representation to reduce the amount of parameters and computation in the network. Pooling layer operates on each feature map independently.
+This is to decrease the computational power required to process the data through dimensionality reduction. Furthermore, it is useful for extracting dominant features which are rotational and positional invariant, thus maintaining the process of effectively training of the model.\\
+Max-pooling :- Max Pooling returns the maximum value from the portion of the image covered by the Kernel. Max Pooling also performs as a Noise Suppressant. It discards the noisy activations altogether and also performs de-noising along with dimensionality reduction.
+\subsubsection{ii.Classification — Fully Connected Layer(FC Layer)} 
+
+After feature extraction we need to classify the data into various classes, this can be done using a fully connected (FC) neural network.
+ Fully connected layers connect every neuron in one layer to every neuron in another layer. It is in principle the same as the traditional multi-layer perceptron neural network (MLP). The flattened matrix goes through a fully connected layer to classify the images.
+This layer basically takes an input volume and outputs an N dimensional vector where N is the number of classes that the program has to choose from. The way this fully connected layer works is that it looks at the output of the previous layer (which as we remember should represent the activation maps of high level features) and determines which features most correlate to a particular class.\\
+\begin{figure}[h]
+\label{ss}
+\centering
+\includegraphics[width= 14cm]{FC Layer.jpeg}
+\caption{CNN- feature extraction + classification}
+\end{figure}
+ \\For example, if the program is predicting that some image is a dog, it will have high values in the activation maps that represent high level features like a paw or 4 legs, etc. Similarly, if the program is predicting that some image is a bird, it will have high values in the activation maps that represent high level features like wings or a beak, etc.
+ \\Basically, a FC layer looks at what high level features most strongly correlate to a particular class and has particular weights so that when you compute the products between the weights and the previous layer, you get the correct probabilities for the different classes.\\
+ \textbf{\emph{a.Tanh Function}}
+ \\Tanh function also known as Tangent Hyperbolic function. It’s actually mathematically shifted version of the sigmoid function.\\
+ \begin{center}
+    f(x) = tanh(x) = 2/(1 + e-2x) - 1 
+ \end{center}
+\begin{enumerate}
+    \item Value Range :- -1 to +1
+    \item Nature :- non-linear
+    \item Uses :- Usually used in hidden layers of a neural network as it’s values lies between -1 to 1 hence the mean for the hidden layer comes out be 0 or very close to it, hence helps in centering the data by bringing mean close to 0. This makes learning for the next layer much easier.
+    \end{enumerate}
+\textbf{\emph{b.Softmax Function }}
+\\The softmax function is also a type of sigmoid function.The softmax activation function is used in neural networks when we want to build a multi-class classifier which solves the problem of assigning an instance to one class when the number of possible classes is larger than two.
+\begin{itemize}
+    \item Nature :- non-linear
+    \item Uses :- Usually used when trying to handle multiple classes. The softmax function would squeeze the outputs for each class between 0 and 1 and would also divide by the sum of the outputs.
+    \item Output:- The softmax function is ideally used in the output layer of the classifier where we are actually trying to attain the probabilities to define the class of each input.
+\end{itemize}
+\subsection{Transfer Learning - VGG16}
+Transfer learning generally refers to a process where a model trained on one problem is used in some way on a second related problem.\\
+In deep learning, transfer learning is a technique whereby a neural network model is first trained on a problem similar to the problem that is being solved. One or more layers from the trained model are then used in a new model trained on the problem of interest.  
+The VGG16 model was developed by the Visual Graphics Group (VGG) at Oxford and was described in the 2014 paper titled “Very Deep Convolutional Networks for Large-Scale Image Recognition.”
+\begin{figure}[h]
+\label{ss}
+\centering
+\includegraphics[width= 14cm]{VGG-16.jpeg}
+\caption{VGG-16}
+\end{figure}
+
+
+\subsubsubsection{The Architecture}
+ The input to cov1 layer is of fixed size 224 x 224 RGB image. The image is passed through a stack of convolutional (conv.) layers, where the filters were used with a very small receptive field: 3×3 (which is the smallest size to capture the notion of left/right, up/down, center\\
+ In one of the configurations, it also utilizes 1×1 convolution filters, which can be seen as a linear transformation of the input channels (followed by non-linearity). The convolution stride is fixed to 1 pixel; the spatial padding of conv. layer input is such that the spatial resolution is preserved after convolution, i.e. the padding is 1-pixel for 3×3 conv. layers. Spatial pooling is carried out by five max-pooling layers, which follow some of the conv.  layers (not all the conv. layers are followed by max-pooling). Max-pooling is performed over a 2×2 pixel window, with stride 2.\\
+Three Fully-Connected (FC) layers follow a stack of convolutional layers (which has a different depth in different architectures): the first two have 4096 channels each, the third performs 1000-way ILSVRC classification and thus contains 1000 channels (one for each class). The final layer is the soft-max layer. The configuration of the fully connected layers is the same in all networks.
+
+\subsection{Transfer Learning - VGG19}
+VGG-19 is a convolutional neural network that is 19 layers deep.\\
+Architecture :
+ \begin{itemize}
+     \item A fixed size of (224 * 224) RGB image was given as input to this network which means that the matrix was of shape (224,224,3).
+     \item The only preprocessing that was done is that they subtracted the mean RGB value from each pixel, computed over the whole training set.
+     \item Used kernels of (3 * 3) size with a stride size of 1 pixel, this enabled them to cover the whole notion of the image.
+     \item Spatial padding was used to preserve the spatial resolution of the image.
+     \item Max pooling was performed over a 2 * 2 pixel windows with slide 2.
+     \item This was followed by Rectified linear unit(ReLu) to introduce non-linearity to make the model classify better and to improve computational time as the previous models used tanh or sigmoid functions ,this proved much better than those.
+     \item Implemented three fully connected layers from which first two were of size 4096 and after that a layer with 1000 channels for 1000-way ILSVRC classification and the final layer is a softmax function.
+\end{itemize}
+The main purpose for which the VGG net was designed was to win the ILSVRC but it has been used in many other ways.
+\begin{itemize}
+    \item Used just as a good classification architecture for many other datasets and as the authors made the models available to the public they can be used as is or with modification for other similar tasks also.
+    \item Transfer learning : can be used for facial recognition tasks also.
+    \item Weights are easily available with other frameworks like keras so they can be tinkered with and used for as one wants.
+    \item Content and style loss using VGG-19 network
+\end{itemize}
+ \begin{figure}[h]
+\label{ss}
+\centering
+\includegraphics[width= 2.5cm]{vgg19.PNG}
+\caption{Architecture}
+\end{figure}
+ 
+ 
+
+\chapter{IMPLEMENTATION }
+\section{ADI based system}
+\subsection{Requirements}
+\begin{itemize}
+  \item Platform-Android Studio
+  \item Language-Java,XML,SQL
+  \item Data-Based on DSM-5 criteria
+\end{itemize}
+
+\subsection{Data}
+
+Data here is a collection of 150 questions made by a medical consultant for the autism diagnosis based on a standard DSM-5 criteria(Diagnostic and Statistical Manual of Mental Disorders-5th edition).The DSM-5 is the standard reference that healthcare providers use to diagnose  mental  and  behavioral  conditions,  including  autism.It defines and classifies mental disorders in order to improve diagnoses, treatment, and research.
+\subsection{Authentication}
+\begin{figure}[h]
+\label{ss}
+\centering
+\includegraphics[width=5cm]{authentication.jpeg}
+\caption{Authentication}
+\end{figure}
+Authentication is the process of recognizing a user’s identity. It is the mechanism of associating an incoming request with a set of identifying credentials. The credentials provided are compared to those on a file in a database of the authorized user’s information on a local operating system or within an authentication server.In the ADI system, the authentication is done by making the user enter the credentials like username,medical consultant’s email-id and the key to whom the user is meant to consult.After successful authentication,the user is provided to access the system.
+\subsection{Reading Input, Score Calculation, Report Generation}
+The questions are categorized with the help of SQL table. The table contains columns such as :
+\begin{itemize}
+    \item Table\_Name
+    \item Table\_ID
+    \item Column\_Question
+    \item Column\_Domain
+    \item Column\_Subdomain
+    \item Column\_Score
+\end{itemize}
+
+
+The score calculation is done by the function calculateScores .It simply takes the mean of attempted questions from each domain and return the result.
+\begin{figure}[h]
+\label{ss}
+\centering
+\includegraphics[width=6cm]{ADI_fn.PNG}
+\caption{function : calculateScores}
+\end{figure}
+The report is generated after score calculation .It is done with the help of 	android.graphics.pdf.PdfDocument class. This class enables generating a PDF document from native Android content.The pages in pdf file can be created using PdfDocument.Page object
+\begin{figure}[h]
+\label{ss}
+\centering
+\includegraphics[width=5cm]{ADI_report.PNG}
+\caption{Report Generation}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{ADOS}
+\subsection{Requirements}
+\begin{itemize}
+  \item IDE - Jupyter notebook
+  \item Language - Python, HTML, CSS
+  \item Dataset - fer2013   -  http://kaggle.com
+  \item Main libraries used in python - Flask ,keras,skleran, tensorflow, numpy, pandas , matplotlib
+\end{itemize}
+
+\subsection{Data}
+
+Dataset is in csv format contains 28709 observations in total. It contains mainly two coloumns pixels and emotions. The column 'pixels' defines the pixel values of images and the column 'emotion' contain the corresponding emotion index indicating the type of emotion. The type of the column 'emotion' is int64 and of the column 'pixels' is object.
+
+\begin{figure}[h]
+\label{ss}
+\centering
+\includegraphics[width= 10cm]{data_csv.PNG}
+\caption{Dataset in csv format}
+\end{figure}
+
+\begin{figure}[h]
+\label{ss}
+\centering
+\includegraphics[width= 8cm]{data_pic.PNG}
+\caption{Picture loaded from data}
+\end{figure}
+
+\subsubsection{Prepossessing}
+\subsubsubsection{Categorizing :- }
+
+The data is split into training and testing such as x and y correspondingly. x contains the features and y is the column of the output class.Categorize y to for compatiblity with softmax activation.to-categorical in python is used to convert array of labeled data(from 0 to nb-classes-1) to one-hot vector. 
+
+\subsubsubsection{Traing and Validation Data :-}
+ The data we use is usually split into training data and test data. The training set contains a known output and the model learns on this data in order to be generalized to other data later on. We have the test dataset (or subset) in order to test our model's prediction on this subset. The training data is further divided into validation data to evaluate each trained model's performance on the validation set.The model with the best validation set performance was taken and evaluated this model on the test set.
+ Next step is to reshape the input in accordance with the used models.
+ 
+ \subsection{Algorithms}
+ \subsubsection{CNN trial - 1}
+ In this, the model uses convolution network consists of 4 layers with 2 convolution layer and 2 dense layer. It consists of 2 maxpooling layers also. The input shape is (48,48) for passing to the network.
+ Here the kernal size is (5,5). The epoch is equal to 100. The activation function used are tanh and softmax.
+ 
+\begin{figure}[h]
+\label{ss}
+\centering
+\includegraphics[width= 10cm]{cnn_trial1sum.PNG}
+\caption{model summary CNN-trial1}
+\end{figure} 
+The model is compiled with loss function categorical crossentropy and stochastic gradient descend optimizer. No early callback in this stage.
+
+ \subsubsection{CNN trial - 2 }
+ In this, the model uses convolution network consists of 4 layers with 2 convolution layer and 2 dense layer. It consists of 2 'maxpooling' layers also.Here an extra hidden layer of 'flattern' layer is added and its output is passed as the input of dense layer.The input shape is (48,48) for passing to the network.
+\begin{figure}[h]
+\label{ss}
+\centering
+\includegraphics[width= 10cm]{cnn_trial2sum.PNG}
+\caption{model summary CNN-trial2}
+\end{figure} 
+The model is compiled with loss function categorical crossentropy and stochastic gradient descend optimizer.Early callback is set in this stage with patience value 3.
+\begin{figure}[h]
+\label{ss}
+\centering
+\includegraphics[width= 12cm]{cnn_trial2epoch.PNG}
+\caption{model epoch CNN-trial2}
+\end{figure}
+
+\subsubsection{CNN trial - 3}
+ In this, the model uses convolution network consists of 5 layers (adding an extra layer) with 3 convolution layer and 2 dense layer. It consists of 3 maxpooling layers also. The input shape is (48,48) for passing to the network.
+\begin{figure}[h]
+\label{ss}
+\centering
+\includegraphics[width= 10cm]{cnn_trial3sum.PNG}
+\caption{model summary CNN-trial3}
+\end{figure} 
+The model is compiled with loss function categorical crossentropy and stochastic gradient descend optimizer.Early callback is set in this stage with patience value 3.
+
+
+\subsubsection{Transfer Learning - VGG16}
+ In this, the input is passed to VGG16 model. It consists of 16 layers. For passing to this network the input is reshaped. For example x-train with shape of (20670, 48, 48) is reshaped to (20670, 48, 48,3).
+\begin{figure}[h]
+\label{ss}
+\centering
+\includegraphics[width= 15cm]{vgg16sum.PNG}
+\caption{model summary VGG16}
+\end{figure} 
+The model is compiled with loss function categorical crossentropy and stochastic gradient descend optimizer.Here the patience value is 2.
+\begin{figure}[h]
+\label{ss}
+\centering
+\includegraphics[width= 18cm]{vgg16epoch.PNG}
+\caption{model epoch VGG16}
+\end{figure}
+
+
+\subsubsection{Transfer Learning - VGG19}
+ In this, the input is passed to VGG19 model. It consists of 19 layers. For passing to this network the input is reshaped. For example x-train with shape of (20670, 48, 48) is reshaped to (20670, 48, 48,3).
+\begin{figure}[h]
+\label{ss}
+\centering
+\includegraphics[width= 18cm]{vgg19sum.PNG}
+\caption{model summary VGG19}
+\end{figure} 
+The model is compiled with loss function categorical crossentropy and stochastic gradient descend optimizer. Here early callback is set with patience value 2 .
+\begin{figure}[h]
+\label{ss}
+\centering
+\includegraphics[width= 15cm]{vgg19epoch.PNG}
+\caption{model epoch VGG19}
+\end{figure}
+ 
+ \\*
+ \\*
+ \\*
+ \subsection{Deployment}
+ The web application was hosted locally with the help of flask library in python.
+ The main file app.py will render between the web pages according to the GET/POST request. The templates are built using html and css. The folder static is used to input - image, css, js,and report files. 
+ \\* For the testing phase it uses 'haarcascade\_frontalface\_default.xml ' for detecting the front face. The decoding is done by using the function 'predict' which
+ predicts the output using the loaded  weights from 'VGG19.h5'. The output of decoded face is recorded and saved to file report.txt. This file is used to compare with actual report.
+ \begin{figure}[h]
+\label{ss}
+\centering
+\includegraphics[width= 15cm]{dep.PNG}
+\caption{Testing phase}
+\end{figure}
+ 
+ 
+ 
+
+
+
+\chapter{EVALUATION AND RESULTS}
+\section{Evaluation of Emotion Recognition system Algorithms}
+\subsection{CNN trial - 1}
+\begin{itemize}
+  \item Training Accuracy : 0.585
+  \item Testing Accuracy  : 0.445
+  \item F1: 0.4402400852732144
+  \item precision: 0.43720037723770516
+ \item  recall: 0.445141065830721
+\end{itemize}
+\begin{figure}[h]
+\label{ss}
+\centering
+\includegraphics[width= 6cm]{confmatr_cnn1.PNG}
+\caption{Confusion matrix cnn-trial 1}
+\end{figure}
+\begin{figure}[h]
+\label{ss}
+\centering
+\includegraphics[width= 15cm]{CNN_trial1_graph.PNG}
+\caption{cnn-trial1 model accuracy and loss}
+\end{figure}
+
+\subsection{CNN trial - 2}
+\begin{itemize}
+  \item Training Accuracy : 0.63449
+  \item Testing Accuracy  : 0.49529
+  \item F1:  0.4869
+  \item precision: 0.4897
+ \item  recall: 0.4953
+\end{itemize}
+\begin{figure}[h]
+\label{ss}
+\centering
+\includegraphics[width= 8cm]{confmatr_cnn2.PNG}
+\caption{Confusion matrix cnn-trial 2}
+\end{figure}
+\begin{figure}[h]
+\label{ss}
+\centering
+\includegraphics[width= 15cm]{CNN_trial2_graph.PNG}
+\caption{cnn-trial2 model accuracy and loss}
+\end{figure}
+
+\subsection{CNN trial - 3}
+\begin{itemize}
+  \item Training Accuracy : 0.61930
+  \item Testing Accuracy  : 0.49529
+  \item F1:  0.48336
+  \item precision: 0.487607
+  \item recall: 0.491466
+\end{itemize}
+\begin{figure}[h]
+\label{ss}
+\centering
+\includegraphics[width= 6cm]{confmatr_cnn3.PNG}
+\caption{Confusion matrix cnn-trial 3}
+\end{figure}
+\begin{figure}[h]
+\label{ss}
+\centering
+\includegraphics[width= 11cm]{CNN_trial3_graph.PNG}
+\caption{cnn-trial3 model accuracy and loss}
+\end{figure}
+
+
+\subsection{Transfer Learning VGG16}
+\begin{itemize}
+  \item Training Accuracy : 0.7234
+  \item Testing Accuracy  : 0.6081
+  \item F1: 0.59706
+  \item precision: 0.60579
+ \item  recall: 0.60815
+\end{itemize}
+\begin{figure}[h]
+\label{ss}
+\centering
+\includegraphics[width= 8cm]{confmatr_vgg16.PNG}
+\caption{Confusion matrix VGG16}
+\end{figure}
+\begin{figure}[h]
+\label{ss}
+\centering
+\includegraphics[width= 15cm]{vgg16graph.PNG}
+\caption{VGG16 model accuracy and loss}
+\end{figure}
+
+\subsection{Transfer Learning VGG19}
+\begin{itemize}
+  \item Training Accuracy : 0.8378
+  \item Testing Accuracy  : 0.6325
+  \item F1: 0.6280
+  \item precision: 0.6448
+ \item  recall: 0.6325
+\end{itemize}
+\begin{figure}[h]
+\label{ss}
+\centering
+\includegraphics[width= 10cm]{confmatr_vgg19.PNG}
+\caption{Confusion matrix VGG19}
+\end{figure}
+\begin{figure}[h]
+\label{ss}
+\centering
+\includegraphics[width= 15cm]{vgg19graph.PNG}
+\caption{VGG19 model accuracy and loss}
+\end{figure}
+
+Thus best accuracy got by VGG19 model comparing with all others .Thus it is taken for further steps. The main advantage of using this model was time reduction. The testing face worked faster than other cnn models.
+\section{Results}
+\subsubsection{ADI And ADOS Interfaces}
+\begin{figure}[h]
+\label{ss}
+\centering
+\includegraphics[width= 8cm]{app1.png}
+\caption{Application Interface ADI - Launging and Authentication Page}
+\end{figure}
+\begin{figure}[h]
+\label{ss}
+\centering
+\includegraphics[width= 8cm]{app2.png}
+\caption{Application Interface ADI - Questionnaire and Report generation}
+\end{figure}
+\begin{figure}[h]
+\label{ss}
+\centering
+\includegraphics[width= 9cm]{web1.png}
+\caption{Web Interface ADOS - Authentication and Admin Dashboard Page}
+\end{figure}
+
+\begin{figure}[h]
+\label{ss}
+\centering
+\includegraphics[width= 9cm]{web2.png}
+\caption{Web Interface ADOS - Reports and face decoding page}
+\end{figure}
+
+\begin{figure}[h]
+\label{ss}
+\centering
+\includegraphics[width= 9cm]{web3.png}
+\caption{Web Interface ADOS - Decoding faces}
+\end{figure}
+\begin{figure}[h]
+\label{ss}
+\centering
+\includegraphics[width= 9cm]{web4.png}
+\caption{Web Interface ADOS - Decoding faces}
+\end{figure}
+\begin{figure}[h]
+\label{ss}
+\centering
+\includegraphics[width= 15cm]{web5.png}
+\caption{Web Interface ADOS - Final result}
+\end{figure}
+
+
+
+
+
+
+
+\chapter{CONCLUSION}
+
+Autistic people constitute a significant percentage of population all over the world.The aim is to explore need of the patients with cognitive deficts and understand the patient to help in daily activities.The core of this project is to use intelligent techniques to help the parents/caretakers and the doctor there by helping the effected ones.
+\\ We aim to design a system for autism diagnosis that helps both the doctor and families with autistic children in autism diagnostics process.The  system mainly consists of two parts based on Autism Diagnostic Interview (ADIS) which is a questionnaire system and an observatory system based on Autism Diagnostic Observation Schedule (ADOS).
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%                       If u have any Publications Related to this Work
+%                 	 If no Publications delete this 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\addcontentsline{toc}{chapter}{\quad PUBLICATIONS RELATED TO THIS WORK}
+%\chapter*{\centering{Publications Related to this Work}}
+
+%\begin{itemize}
+%\item{Presented the paper  in Conference held at VAST, Thrissur, March 2013}
+%\item{Paper}
+
+%\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%          Bibliography 
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\clearpage
+\addcontentsline{toc}{chapter}{\quad BIBLIOGRAPHY}
+\begin{thebibliography}{99}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%          Add Bibliography from below, here 3 eg are there
+%%	    If u need to add more bib  use \bibitem   command again & again
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibitem{a}
+Andrea Zunino, Pietro Morerio, Andrea Cavallo, Caterina Ansuini, Jessica Podda , Francesca Battaglia , Edvige Veneselli, Cristina Becchio and Vittorio Murino
+. Video Gesture Analysis
+for Autism Spectrum Disorder Detection 
+\bibitem{b}
+Nithya Roopa. S.Emotion Recognition from Facial Expression using Deep Learning.International Journal of Engineering and Advanced Technology (IJEAT)
+ISSN: 2249 – 8958, Volume-8 Issue-6S, August 20
+\bibitem{c}
+Dhwani Mehta, Mohammad Faridul Haque Siddiqui and Ahmad Y Javaid.
+Recognition of Emotion Intensities Using Machine Learning Algorithms: A Comparative Study
+ \bibitem{d}How Will DSM- 5 Affect Autism Diagnosis ? A Systematic Literature Review and Meta - analysis - Kristine M. Kulage , Arlene M. Smaldone & Elizabeth G.Cohn
+Fillit, H., Knopman, D., Cummings, J., & Appel, F. (1999b). Opportunities
+for improving managed care for individuals with autism: Part 2—A
+framework for care. American Journal of Managed Care, 5, 317–324
+\bibitem{e}
+Toward objective classification of childhood autism: Childhood Autism Rating Scale(CARS). - Schopler,Eric Reichler, Robert J . DeVe l l i s , Robert F . Daly ,Kenneth
+
+\bibitem{f}
+Architecture for Mobile Quiz Application using Android Application Framework - Praveen Gupta 
+\bibitem{g}
+Merity, Steve. ”Question Answering on the Facebook BAbi Dataset Using Recurrent Neural
+Networks and 175 Lines of Python Keras.” Web log post.
+
+
+\end{thebibliography}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\clearpage
+%\addcontentsline{toc}{chapter}{\quad APPENDIX}
+%\chapter*{\centering{APPENDIX}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                          
+%%		APPENDIX
+%%    if u have pgms make that a pdf & add it here, like the data sheets
+%%
+%%    If you need to give an Intro to the Appendix
+%%                                 Otherwise Delete it . . . 
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                      
+%%                      For Adding PDF (Data Sheets) for the Appendix
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\input{lastpage}
+\end{document}
+
+
+
